@@ -25,6 +25,7 @@ html,body{
 }
 main{
     display: flex;
+    align-items: end;
     gap: 2vw;
 }
 .first-section{
@@ -55,7 +56,7 @@ main{
 .second-section{
     background-color: var(--DarkBlue);
     width: clamp(25rem, 50vw, 35rem);
-    padding: 3vw;
+    padding: 2vw 3vw;
     position: relative;
     border-radius: 0.8vw;
     color: var(--PaleBlue);
@@ -131,22 +132,11 @@ progress::before{
     content: '0 GB';
     top: 150%;
 }
-progress::-moz-progress-bar::before{
-    position: absolute;
-    content: '0 GB';
-    top: 150%;
-}
 progress::after{
     position: absolute;
     content: '1000 GB';
     top: 150%;
-    left: 88%;
-}
-progress::after{
-    position: absolute;
-    content: '1000 GB';
-    top: 150%;
-    left: 88%;
+    right: 0%;
 }
 footer{
     position: absolute;
@@ -243,6 +233,6 @@ footer{
     }
     progress::after{
         top: 155%;
-        left: 84%;
+        right: 0%;
     }
 }
